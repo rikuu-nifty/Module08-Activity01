@@ -1,0 +1,88 @@
+/* Tab styles */
+.tab-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tab {
+    padding: 12px 30px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin-right: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Added shadow */
+}
+
+.tab.active {
+    background-color: #4CAF50;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.tab:hover {
+    background-color: #e7e7e7;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Added shadow */
+}
+
+/* Tab content container */
+.tab-content {
+    padding: 20px;
+}
+
+/* Form input styles */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Added shadow */
+}
+
+input[type="date"] {
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Added shadow */
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Added shadow */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 12px;
+}
